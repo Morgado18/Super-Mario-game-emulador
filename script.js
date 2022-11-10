@@ -3,11 +3,11 @@ const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 const h2 = document.querySelector('#h2');
 
-const jump = ()=>{
-  mario.classList.add('jump');
+const pular = ()=>{
+  mario.classList.add('pular');
 
   setTimeout(()=>{
-    mario.classList.remove('jump');
+    mario.classList.remove('pular');
   },500)
 }
 
@@ -32,5 +32,5 @@ const loop = setInterval(()=>{
   } 
 },10)
 
-document.addEventListener('keydown', jump);
+document.addEventListener('keydown', pular);
 
